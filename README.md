@@ -35,7 +35,7 @@ Realtime Collaborative IDE is a web-based platform that lets users collaborate o
 
 ```sh
 git clone https://github.com/Deep-2108/RealtimeIDE-main.git
-cd RealtimeIDE
+cd RealtimeIDE-main
 ```
 
 Install backend and frontend dependencies:
@@ -121,9 +121,5 @@ Then restart the backend.
 
 - The project includes a local `y-webrtc` folder for the signaling server.
 - The frontend connects to the backend at `http://localhost:5000` and the editor is served by Vite.
-
-## Demo Video 🎥
-
-Watch the project in action: [Click here to watch the demo](https://drive.google.com/file/d/1ciBFa_Z7OR2ZQu8mzn9M9skOcYJw5Xnb/view?usp=sharing)
 
 Feel free to open issues and contribute! 🚀
