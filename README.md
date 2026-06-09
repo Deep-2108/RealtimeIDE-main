@@ -15,12 +15,12 @@ Realtime Collaborative IDE is a web-based platform that lets users collaborate o
 
 ## Technologies Used
 
-- Frontend: React, Vite, Tailwind CSS
+- Frontend: React, Tailwind CSS
 - Backend: Node.js, Express
 - Realtime synchronization: Yjs, y-webrtc, y-websocket
 - Editor: Monaco Editor
 - Database: MongoDB
-- AI integration: Gemini via backend proxy route
+- AI integration: Gemini
 
 ## Local Setup
 
@@ -89,13 +89,55 @@ npm run dev
 
 Open the app at `http://localhost:5173`
 
-## Chatbot Usage
+## How to Use
 
-- The AI chat panel appears in the right-hand editor area.
-- Click the chat bubble to expand it and ask questions about code, compiler errors, or project setup.
-- The `Clear` button resets chat to the initial assistant welcome message.
-- Use `Stop` while a request is in progress to abort the API call.
-- An unread badge appears when new messages arrive while the panel is collapsed.
+### 1. Access the app
+
+- Open `http://localhost:5173` in your browser after starting the frontend.
+- The homepage shows login/signup options. If you are not logged in, click **Signup** to create an account or **Login** if you already have one.
+- Once logged in, use the **Editor Page** link to access the collaborative editor.
+
+### 2. Use the file explorer
+
+- The left sidebar is the **File Explorer**.
+- Click **+** to create a new file and enter a file name.
+- Click any file name to load its content into the editor.
+- Use the item menu to **Rename**, **Delete**, or **Change Access** for a file.
+- Files are fetched from the backend and require a valid login token.
+
+### 3. Edit code collaboratively
+
+- The central editor is a shared Monaco editor powered by **Yjs** and **y-webrtc**.
+- Changes are synchronized in real time with other collaborators connected to the same file.
+- The active users toolbar at the top shows other users currently editing the document.
+- The editor auto-saves the active file every few seconds and also saves before navigating away.
+
+### 4. Run code
+
+- Use the **Run Code** button on the right panel to execute the current editor content.
+- The app sends the code to the Piston execution API configured for C++ and displays the output below.
+- The **Output** panel shows program output or any execution error returned by the runner.
+
+### 5. Provide stdin
+
+- Enter custom input in the **Stdin** section before running code.
+- The input is passed to the running program and reflected in the output results.
+
+### 6. Share and access control
+
+- If you are the creator of the current file, the **Share File** section appears in the right panel.
+- Enter a collaborator's email and click **Share** to grant access through the backend sharing endpoint.
+- Shared file access is managed by the backend route `api/files/share`.
+
+### 7. Use the AI chatbot
+
+- The chatbot lives in the bottom-right panel as a floating bubble when collapsed.
+- Click the bubble to expand the chat panel.
+- Ask questions about code, compiler errors, project setup, or collaboration issues.
+- Click **Send** to submit your query.
+- If a request is running, click **Stop** to abort the API call.
+- Click **Clear** to reset the chat to the initial assistant message.
+- When the chat panel is collapsed, new assistant responses show an unread badge on the bubble.
 
 ## Troubleshooting
 
