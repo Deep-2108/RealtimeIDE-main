@@ -1,0 +1,340 @@
+/* HomePage.css
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #002233, #001622); 
+    color: #e0e0e0; 
+  }
+  
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    background: #003344; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #004455;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #cfd8dc; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff; 
+  }
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .main-content h2 {
+    font-size: 42px;
+    color: #ffffff; 
+    margin-bottom: 15px;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    color: #b0bec5; 
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .get-started-btn {
+    text-decoration: none;
+    background: #006680; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-started-btn:hover {
+    background: #0088a8; 
+    transform: scale(1.05);
+  }
+  
+  .footer {
+    background: #003344; 
+    color: #cfd8dc;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #004455;
+  }
+  
+  .footer a {
+    color: #80d8ff; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffffff; 
+  }
+   */
+   /* .body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #002233, #001622); 
+    color: #e0e0e0; 
+  }
+  
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .homepage-container::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://thumbs.dreamstime.com/b/code-abstract-background-software-developers-270335223.jpg') center/cover no-repeat;
+    opacity: 1; 
+    z-index: -1; 
+  }
+  
+  .header {
+    background: rgba(0, 51, 68, 0.8); 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #004455;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1; 
+  }
+  
+  .main-content h2 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    color: #b0bec5;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .get-started-btn {
+    text-decoration: none;
+    background: #006680;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-started-btn:hover {
+    background: #0088a8;
+    transform: scale(1.05);
+  }
+  
+  .footer {
+    background: rgba(0, 51, 68, 0.8); 
+    color: #cfd8dc;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #004455;
+  }
+  
+  .footer a {
+    color: #80d8ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffffff;
+  } */
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #002233, #001622); /* Fallback gradient */
+    color: #e0e0e0; /* Light text color for contrast */
+  }
+  
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .homepage-container::before {
+    content: ''; /* Add an empty content element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://thumbs.dreamstime.com/b/code-abstract-background-software-developers-270335223.jpg') center/cover no-repeat;
+    opacity: 0.3; /* Slightly reduced opacity for the background image */
+    z-index: -1; /* Ensure background stays behind content */
+  }
+  
+  .header {
+    background: rgba(0, 51, 68, 0.8); /* Semi-transparent background for header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #004455;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1; /* Content stays on top */
+  }
+  
+  .main-content h2 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    color: #b0bec5;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .get-started-btn {
+    text-decoration: none;
+    background: #006680;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-started-btn:hover {
+    background: #0088a8;
+    transform: scale(1.05);
+  }
+  
+  .footer {
+    background: rgba(0, 51, 68, 0.8); /* Semi-transparent footer background */
+    color: #cfd8dc;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #004455;
+  }
+  
+  .footer a {
+    color: #80d8ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffffff;
+  }
+  

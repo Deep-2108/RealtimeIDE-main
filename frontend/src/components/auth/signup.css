@@ -1,0 +1,79 @@
+/* signup.css */
+
+/* Apply a similar background as the login */
+body {
+    background-color: #f7fafc;  /* Light background */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5rem auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2b6cb0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #b3c6d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #3182ce;
+  }
+  
+  button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3182ce;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #cbd5e0;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #2b6cb0;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  a {
+    color: #3182ce;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,159 @@
+
+.file-explorer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 220px;
+  background-color: #252526;
+  color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+}
+
+.file-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.new-file-btn {
+  width: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 5px;
+  transition: color 0.2s ease;
+}
+
+.new-file-btn:hover {
+  color: #fff;
+  background-color: #37373d !important;
+  transform: scale(1.1);
+}
+
+.new-file-btn:active,
+.new-file-btn:focus {
+  outline: none;
+  background: none;
+}
+
+.icon-sm {
+  font-size: 0.9rem;
+}
+
+.icon-xs {
+  font-size: 0.8rem;
+}
+
+.icon-menu {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.file-icon {
+  margin-right: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.file-options-btn {
+  width: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 8px;
+  font-size: 1.2em;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.file-options-btn:hover {
+  color: #fff;
+  background: none !important;
+}
+
+.file-options-btn:active,
+.file-options-btn:focus {
+  outline: none;
+  background: none;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-item {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.file-item:hover {
+  background-color: #2a2d2e;
+}
+
+.file-item.selected {
+  background-color: #37373d;
+}
+
+.loading {
+  padding: 15px;
+  color: #888;
+}
+
+.file-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.file-name {
+  margin-left: 4px;
+}
+
+.options-menu {
+  position: absolute;
+  right: 10px;
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 100;
+  min-width: 150px;
+}
+
+.options-menu button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.options-menu button:hover {
+  background-color: #404040;
+}
+
+.delete-btn {
+  color: #ff6b6b;
+}

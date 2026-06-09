@@ -1,0 +1,103 @@
+/* General Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7fafc; /* Light background color */
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #2b6cb0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    font-size: 0.875rem;
+    color: #2b6cb0;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #b3c6d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2b6cb0;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.radio-group label {
+    font-size: 0.875rem;
+    color: #2b6cb0;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3182ce;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #2b6cb0;
+}
+
+.submit-button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+
+.footer-text a {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}

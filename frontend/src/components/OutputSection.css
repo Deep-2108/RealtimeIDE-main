@@ -1,0 +1,19 @@
+.output-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+}
+
+.output-area {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  overflow: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+  background-color: #2f353c;
+  color: white;
+}

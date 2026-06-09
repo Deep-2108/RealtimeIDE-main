@@ -1,0 +1,15 @@
+.output-header {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.output-header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
