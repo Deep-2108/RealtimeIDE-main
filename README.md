@@ -34,7 +34,7 @@ Realtime Collaborative IDE is a web-based platform that lets users collaborate o
 ### Clone and install
 
 ```sh
-git clone https://github.com/Shikha-9125/RealtimeIDE.git
+git clone https://github.com/Deep-2108/RealtimeIDE-main.git
 cd RealtimeIDE
 ```
 
