@@ -20,7 +20,7 @@ Realtime Collaborative IDE is a web-based platform that lets users collaborate o
 - Realtime synchronization: Yjs, y-webrtc, y-websocket
 - Editor: Monaco Editor
 - Database: MongoDB
-- AI integration: Gemini
+- AI integration: Gemini via LangChain (`@langchain/google-genai`)
 
 ## Local Setup
 
@@ -63,6 +63,8 @@ MONGO_URI=your_mongodb_connection_string
 GEMINI_API_KEY=your_gemini_api_key
 GEMINI_MODEL=gemini-3.5-flash
 ```
+
+The backend chatbot uses LangChain with the Google Gemini provider, so make sure `GEMINI_API_KEY` is configured before starting the server.
 
 ### Run the project
 
